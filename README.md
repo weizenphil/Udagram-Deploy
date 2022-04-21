@@ -11,3 +11,32 @@ After the initial setup, you will learn to interact with the services you starte
 You will then register for a free account on CircleCi and connect your Github account to it. Based on the manual steps used to deploy the app, you will write a config.yml file that will make the process reproducible in CircleCi. You will set up the process to be executed automatically based when code is pushed on the main Github branch.
 
 The project will also include writing documentation and runbooks covering the operations of the deployment process. Those runbooks will serve as a way to communicate with future developers and anybody involved in diagnosing outages of the Full-Stack application.
+
+## Link
+
+The link to the application can be seen [here](http://ayush-udagram.s3-website-us-east-1.amazonaws.com/home).
+
+## Installation
+
+Run `npm install` to download the necessary dependencies.
+
+## Running Udagram locally
+
+You will need to create a `.env` file in `udagram-api` with the following variables set:
+- AWS_ACCESS_KEY_ID
+- AWS_DEFAULT_REGION
+- AWS_SECRET_ACCESS_KEY
+- JWT_SECRET
+- POSTGRES_DB
+- POSTGRES_HOST
+- POSTGRES_PASSWORD
+- POSTGRES_PORT
+- POSTGRES_USERNAME
+- PORT 
+- URL
+
+Open 2 terminal windows:
+1. Navigate to `udagram-api` and run `npm run dev`
+2. Navigate to `udagram-frontend` and run `npm run start`
+
+Open `http://localhost:3000` in the browser.
