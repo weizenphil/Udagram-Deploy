@@ -14,7 +14,7 @@ The project will also include writing documentation and runbooks covering the op
 
 ## Link
 
-The link to the application can be seen [here](http://ayush-udagram.s3-website-us-east-1.amazonaws.com/home).
+The link to the application can be seen [here](http://randomudagram1234.s3-website-us-east-1.amazonaws.com/home).
 
 ## Installation
 
@@ -42,4 +42,4 @@ Open 2 terminal windows:
 Open `http://localhost:3000` in the browser.
 
 # Circlee CI Link
-https://app.circleci.com/pipelines/github/bansalayush25/Udagram-Deploy/8/workflows/6b21bae5-1a08-466e-ae6f-107dcfdaffba/jobs/9
+https://app.circleci.com/pipelines/github/bansalayush25/Udagram-Deploy/24/workflows/45578a1a-e49f-4539-a20d-34ef486a36d7
