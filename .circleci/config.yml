@@ -30,7 +30,7 @@ orbs:
         command: npm run backend:build
   deploy:
    docker:
-      -image: 'cimg/base:stable'
+      - image: 'cimg/base:stable'
     steps:
       run:
         name: Deploy Frontend
