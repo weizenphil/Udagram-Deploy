@@ -47,5 +47,5 @@ workflows:
     jobs:
       - install_build_deploy
       - test:
-        requires:
-          - install_build_deploy
+          requires:
+            - install_build_deploy
