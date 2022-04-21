@@ -3,7 +3,7 @@ orbs:
   node: circleci/node@4.1.0
   aws-cli: circleci/aws-cli@1.3.1
   eb: circleci/aws-elastic-beanstalk@1.0.2
-  jobs:
+jobs:
   install:
     docker:
       - image: 'cimg/base:stable'
@@ -20,24 +20,24 @@ orbs:
           command: npm run backend:install
   build:
     docker:
-      -image: 'cimg/base:stable'
-    steps:
-      run:
-        name: Build Frontend
-        command: npm run frontend:build
-      run:
-        name: Build Backend
-        command: npm run backend:build
-  deploy:
-   docker:
       - image: 'cimg/base:stable'
     steps:
-      run:
-        name: Deploy Frontend
-        command: npm run frontend:deploy
-      run:
-        name: Deploy Backend
-        command: npm run backend:deploy
+      - run:
+          name: Build Frontend
+          command: npm run frontend:build
+      - run:
+          name: Build Backend
+          command: npm run backend:build
+  deploy:
+    docker:
+        - image: 'cimg/base:stable'
+    steps:
+      - run:
+          name: Deploy Frontend
+          command: npm run frontend:deploy
+      - run:
+          name: Deploy Backend
+          command: npm run backend:deploy
 workflows:
   udagram:
     jobs:
