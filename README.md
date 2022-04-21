@@ -40,3 +40,6 @@ Open 2 terminal windows:
 2. Navigate to `udagram-frontend` and run `npm run start`
 
 Open `http://localhost:3000` in the browser.
+
+# Circlee CI Link
+https://app.circleci.com/pipelines/github/bansalayush25/Udagram-Deploy/8/workflows/6b21bae5-1a08-466e-ae6f-107dcfdaffba/jobs/9
