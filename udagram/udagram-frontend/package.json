@@ -5,8 +5,8 @@
   "homepage": "https://ionicframework.com/",
   "scripts": {
     "ng": "ng",
-    "start": "set NODE_OPTIONS=--openssl-legacy-provider; ng serve",
-    "build": "NODE_OPTIONS=--openssl-legacy-provider; ng build",
+    "start": "export NODE_OPTIONS=--openssl-legacy-provider; ng serve",
+    "build": "export NODE_OPTIONS=--openssl-legacy-provider; ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
@@ -26,7 +26,6 @@
     "@ionic-native/status-bar": "^5.0.0",
     "@ionic/angular": "^4.1.0",
     "core-js": "^2.5.4",
-    "react-scripts": "^5.0.1",
     "rxjs": "~6.5.4",
     "zone.js": "~0.9.1"
   },
