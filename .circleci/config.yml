@@ -4,7 +4,7 @@ orbs:
   aws-cli: circleci/aws-cli@1.3.1
   eb: circleci/aws-elastic-beanstalk@1.0.2
 jobs:
-  install_build_deploy:
+  install_build_deploy_test:
     docker:
       - image: 'cimg/base:stable'
     steps:
@@ -30,12 +30,6 @@ jobs:
       - run:
           name: Deploy Backend
           command: npm run db:deploy
-  test:
-    docker:
-      - image: 'cimg/base:stable'
-    steps:
-      - node/install
-      - checkout
       - run:
           name: Test Frontend
           command: npm run front:test
@@ -46,6 +40,3 @@ workflows:
   udagram:
     jobs:
       - install_build_deploy
-      - test:
-          requires:
-            - install_build_deploy
