@@ -8,26 +8,33 @@ jobs:
     docker:
       - image: 'cimg/base:stable'
     steps:
+      # NodeJS, AWS CLI, EB is setup and code is checked out from repo
       - node/install
       - checkout
       - aws-cli/setup
       - eb/setup
       - run:
+        # Install the frontend dependencies
           name: Install Frontend
           command: npm run front:install
       - run:
+        # Install the backend dependencies
           name: Install Backend
           command: npm run db:install
       - run:
+        # Build the frontend
           name: Build Frontend
           command: npm run front:build
       - run:
+        # Build the backend
           name: Build Backend
           command: npm run db:build
       - run:
+        # Deploy the frontend to S3
           name: Deploy Frontend
           command: npm run front:deploy
       - run:
+        # Deploy the backend to EB
           name: Deploy Backend
           command: npm run db:deploy
 workflows:
