@@ -1,6 +1,6 @@
 branch-defaults:
   default:
-    environment: udagram-api-dev
+    environment: null
 deploy:
   artifact: www/Archive.zip
 environment-defaults:
@@ -10,7 +10,7 @@ environment-defaults:
 global:
   application_name: udagram-api
   branch: null
-  default_ec2_keyname: null
+  default_ec2_keyname: udagram-key
   default_platform: Node.js
   default_region: us-east-1
   include_git_submodules: true
