@@ -12,10 +12,6 @@ You will then register for a free account on CircleCi and connect your Github ac
 
 The project will also include writing documentation and runbooks covering the operations of the deployment process. Those runbooks will serve as a way to communicate with future developers and anybody involved in diagnosing outages of the Full-Stack application.
 
-## Link
-
-The link to the application can be seen [here](http://randomudagram1234.s3-website-us-east-1.amazonaws.com/home).
-
 ## Installation
 
 Run `npm install` to download the necessary dependencies.
